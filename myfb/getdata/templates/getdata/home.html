@@ -1,0 +1,14 @@
+{% extends 'getdata/base.html' %}
+{% block title %}
+    Hello
+{% endblock %}
+
+
+{% block content %}
+    <form method="POST" enctype="multipart/form-data" action="/">
+        {% csrf_token %}
+        <input type="text" name="txt_search"/>
+        <input type="submit" name="btn_search" value="Search"/>
+    </form>
+    <p>{{name}}</p>
+{% endblock %}

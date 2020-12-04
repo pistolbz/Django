@@ -1,0 +1,13 @@
+{% extends 'getdata/base.html' %}
+{% block title %}
+    Check
+{% endblock %}
+
+
+{% block content %}
+<ol style="list-style: decimal;">
+    {% for dt in name %}
+        <li>{{dt}}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
