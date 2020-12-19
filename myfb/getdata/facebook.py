@@ -51,10 +51,9 @@ class UsingFacebookToGetData:
         return people_comment
         
 
-
-cookie = "sb=E0qdX5tM9FMiTUlPvyGfPm-R; datr=E0qdX_t8D-StIIZzPwOU1gmi; wd=1366x625; locale=vi_VN; c_user=100057086070901; xs=7%3An3MRX4YWqm-aRQ%3A2%3A1605354298%3A-1%3A-1; fr=1BABgYzPdGhBc19xx.AWWsRjtXGVpoT4GyyNEdoztGR_g.BfnUoT.y0.AAA.0.0.Bfr8M6.AWUADISZKiI; spin=r.1002981746_b.trunk_t.1605354302_s.1_v.2_"
-page_id = '740570182799406'
-post_id = '1552636814926068'
+cookie = ''
+page_id = ''
+post_id = ''
 
 facebook = UsingFacebookToGetData()
 facebook.login(cookie)
