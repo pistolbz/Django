@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    OPEN WEBCAM
+{% endblock %}
+
+{% block content %}
+    <form action="/" >
+        <input type="submit" name="btn_takephoto" value="Click to take a photo">
+        <input type="submit" name="btn_takevideo" value="Click to take a video">
+    </form>
+    <input type="submit" name="btn_showphoto" value="Click to show a photo" onclick="show_picture()">
+    <!-- <input type="submit" name="btn_hiddenphoto" value="Click to hidden a photo" onclick="hidden_picture()"> -->
+    <img id = "load_picture" src="" alt="My Webcam" style="display: none;">
+    
+        
+    <script type="text/javascript">
+        function show_picture() {
+            var picture = "{% static 'img/capture.jpg' %}";
+            var img = document.getElementById('load_picture');
+            img.style.display = 'block';
+            img.src = picture;
+        }
+/* 
+        function hidden_picture() {
+            document.getElementById('load_picture').style.display = 'none';
+        } */
+    </script>
+{% endblock %}
