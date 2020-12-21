@@ -10,7 +10,7 @@
         <input type="submit" name="btn_takevideo" value="Click to take a video">
     </form>
     <input type="submit" name="btn_showphoto" value="Click to show a photo" onclick="show_picture()">
-    <!-- <input type="submit" name="btn_hiddenphoto" value="Click to hidden a photo" onclick="hidden_picture()"> -->
+    <input type="submit" name="btn_hiddenphoto" value="Click to hidden a photo" onclick="hidden_picture()">
     <img id = "load_picture" src="" alt="My Webcam" style="display: none;">
     
         
@@ -21,9 +21,9 @@
             img.style.display = 'block';
             img.src = picture;
         }
-/* 
+
         function hidden_picture() {
             document.getElementById('load_picture').style.display = 'none';
-        } */
+        }
     </script>
 {% endblock %}
